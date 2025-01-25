@@ -7,6 +7,7 @@ html, body {
     padding: 0;
     background-color: #FFF7ED;
     font-family: "Inter", sans-serif;
+    max-width: 35rem;
 }
 
 body::-webkit-scrollbar {
@@ -142,4 +143,99 @@ header a:hover {
     background-color: #161616;
     color: white;
     border-radius: 10px;
+}
+
+/*** Vans page ***/
+section.listings {
+    padding: 0 1.65rem;
+}
+
+section.listings h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.listings__filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.listings__filter-buttons {
+    display: flex;
+    gap: 1.25rem;
+    margin-right: auto;
+}
+
+.listings__filterBtn {
+    padding: 7px 25px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.listings__filter-clearBtn {
+    color: #4D4D4D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.listings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.listing {
+    width: 14rem;
+    margin-bottom: 1.69rem;
+}
+
+.listing__image {
+    height: 14rem;
+    border-radius: 5px;
+}
+
+.listing__name-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+}
+
+.listing__name-price > p {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.listing__type-wrapper {
+    display: flex;
+}
+
+.listing__type {
+    width: 5.35rem;
+    padding: 0.25rem 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    color: #FFEAD0;
+}
+
+.listing__type--simple {
+    background-color: #E17654;
+}
+
+.listing__type--rugged {
+    background-color: #115E59;
+}
+
+.listing__type--luxury {
+    background-color: #161616;
+}
+
+.listing span {
+    font-size: 0.875rem;
 }

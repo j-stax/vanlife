@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import VansListing from '../components/VansListing'
+import React, { useState, useEffect } from "react"
+import VanListing from "../components/VanListing"
 
 export default function Vans() {
     const [listings, setListings] = useState([])
@@ -20,6 +20,17 @@ export default function Vans() {
         getListings()
     }, [])
 
+    const vanElements = listings.map(item => 
+        <VanListing 
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            price={item.price}
+            imageUrl={item.imageUrl}
+            type={item.type}
+        />
+    )
+
     return (
         <section className="listings">
             <h2>Explore our van options</h2>
@@ -32,15 +43,7 @@ export default function Vans() {
                 <span className="listings__filter-clearBtn">Clear filters</span>
             </div>
             { listings.length > 0 && <div className="listings-container">
-                {listings.map(item => 
-                    <VansListing 
-                        key={item.id}
-                        name={item.name}
-                        price={item.price}
-                        imageUrl={item.imageUrl}
-                        type={item.type}
-                    />
-                )}
+                {vanElements}
             </div>}
         </section>
     )

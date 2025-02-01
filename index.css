@@ -220,7 +220,7 @@ section.listings h2 {
     display: flex;
 }
 
-.listing__type {
+.listing__type, .van-details__type {
     width: 5.35rem;
     padding: 0.25rem 0;
     text-align: center;
@@ -231,18 +231,47 @@ section.listings h2 {
     font-weight: 600;
 }
 
-.listing__type--simple {
+.listing__type--simple, .van-details__type--simple {
     background-color: #E17654;
 }
 
-.listing__type--rugged {
+.listing__type--rugged, .van-details__type--rugged {
     background-color: #115E59;
 }
 
-.listing__type--luxury {
+.listing__type--luxury, .van-details__type--luxury {
     background-color: #161616;
 }
 
 .listing span {
     font-size: 0.875rem;
+}
+
+.van-details {
+    padding: 2.5rem 1.7rem 5.3rem;
+}
+
+.van-details__return-link {
+    color: #201F1D;
+}
+
+.van-details__image {
+    width: 100%;
+    margin-top: 2.55rem;
+    margin-bottom: 3.15rem;
+}
+
+.van-details__price {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.van-details__select-btn {
+    width: 100%;
+    height: 3.125rem;
+    background-color: #FF8C38;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
 }
